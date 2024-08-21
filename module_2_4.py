@@ -4,7 +4,9 @@ not_primes = []
 for i in numbers:
     if i < 4 and i != 1:
         primes.append(i)
-    elif i % 2 ==0 or i % 3 ==0:
+    elif i%(i**0.5) == 0:
+        not_primes.append(i)
+    elif i % 2 == 0 or i % 3 == 0:
         not_primes.append(i)
     else:
         primes.append(i)
